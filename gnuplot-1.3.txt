@@ -1,0 +1,21 @@
+#!/usr/bin/gnuplot
+reset
+
+set title 'h - R_1' font 'Helvetica, 20'
+
+set xlabel 'h' font 'Helvetica, 16'
+set ylabel 'R_1' font 'Helvetica, 16'
+
+set tics nomirror out scale 0.75
+
+set xzeroaxis
+set yzeroaxis
+
+set border 3
+
+set logscale x 10
+set logscale y 10
+
+set nokey
+
+plot 'output' with linespoints pointtype 7
