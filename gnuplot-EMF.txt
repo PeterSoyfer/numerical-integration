@@ -1,0 +1,91 @@
+#!/usr/bin/gnuplot
+reset
+
+set size square
+
+set parametric
+
+#set tics nomirror out scale 0.75
+
+#set xtics 1
+#set ytics 1
+
+set xzeroaxis
+set yzeroaxis
+
+set border 3
+
+set nokey
+
+plot '-1_1e4' with points pointtype 7 pointsize 0.4, [0:2*pi] sin(t), cos(t) lc rgb 'black'
+
+#plot '-1_10' with dots, [0:2*pi] sin(t), cos(t) lc rgb 'black'
+
+#--------------------------------------------------------------------------
+
+#!/usr/bin/gnuplot
+reset
+
+set size square
+
+set parametric
+
+set tics nomirror out scale 0.75
+
+#set xrange [-1.5:2]
+#set yrange [-1.5:2]
+
+set xtics 0.5
+set ytics 0.5
+
+set xzeroaxis
+set yzeroaxis
+
+set border 3
+
+set nokey
+
+set multiplot
+
+set origin 0.0,0.0
+set size 1.0,1.0
+
+plot 'plot-output' with points pointtype 7, [0:2*pi] sin(t), cos(t) lc rgb 'black'
+
+set origin 0.55,0.575
+set size 0.4,0.4
+
+set xrange [0.99:1.01]
+set yrange [-0.01:0.01]
+
+#plot 'plot-output' with points pointtype 7, [-pi/10:pi/10] sin(t), cos(t) lc rgb 'black'
+
+replot
+
+set nomultiplot
+
+#--------------------------------------------------------------------
+
+#!/usr/bin/gnuplot
+reset
+
+set size square
+
+set parametric
+
+set tics nomirror out scale 0.75
+
+set xrange [-1.05:1.05]
+set yrange [-1.05:1.05]
+
+set xtics 0.5
+set ytics 0.5
+
+set xzeroaxis
+set yzeroaxis
+
+set border 3
+
+set nokey
+
+plot 'plot-output' with points pointtype 7, [0:2*pi] sin(t), cos(t) lc rgb 'black'
