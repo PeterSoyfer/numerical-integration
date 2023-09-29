@@ -1,1 +1,3 @@
+1. This task was ought to be showing Dormand-Prince method's superiority over plain Euler method. Taking the same Cauchy problem as it was at the 'Euler_Method', point (b) and solving it now with Dormand-Prince, one should easily observe significant decrease in $R_1$ error and remarkable enhancement of precision for the same even partitions with $h = 0.1, 0.01, 0.001$ .
 
+2. Now, let's solve the Cauchy problem from the 'Euler_failure' task with Dormand-Prince. Doing so for the same periods of time and numerical differentiation steps, one can compare the results and obtain a pretty persuading answer.
